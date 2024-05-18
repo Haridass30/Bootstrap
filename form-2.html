@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Form2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .a{
+                border:1px solid rgba(76, 76, 241, 0);
+                background-color: rgba(90, 90, 250, 0);
+                border-bottom:1px solid black;
+            }
+            .b{
+                border:1px solid rgba(30, 30, 37, 0);
+                background-color: rgba(30, 30, 37, 0);
+                border-bottom:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container p-5">
+            <div class="row bg-danger">
+                <div class="col-6 bg-primary">
+                    <h4 class="text-center text-warning">Login</h4>
+                    <form>
+                        <label for="name" class="form-label mt-5">Enter Your Name</label>
+                        <input type="text" class="form-control w-100 mt-2 a">
+                        <label for="pwd" class="form-label mt-3">Password</label>
+                        <input type="password" class="form-control w-100 mt-2 a">
+                        <input type="checkbox" class="form-check-input mt-4">
+                        <label class="form-label mt-4">Remember me</label><br>
+                        <button class="form-control btn btn-success mt-4 w-25" type="button">Login</button>
+                    </form>
+                </div>
+                <div class="col-6 bg-secondary">
+                    <h4 class="text-center text-warning">Registration</h4>
+                    <form>
+                        <label for="name" class="form-label mt-5">user Name</label>
+                        <input type="text" class="form-control w-100 mt-2 b">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control b">
+                        <label for="pwd" class="form-label mt-3">Password</label>
+                        <input type="password" class="b form-control w-100 mt-2">
+                        <label for="pwd" class="form-label mt-3">Confirm Password</label>
+                        <input type="password" class="b form-control w-100 mt-2">
+                        <input type="checkbox" class=" form-check-input mt-4">
+                        <label class="form-label mt-4">Remember me</label><br>
+                        <button class="form-control btn btn-success mt-4 w-25" type="button">Registration</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

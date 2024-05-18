@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container p-5">
+            <form class="was-validated">
+               <div class="my-3">
+                    <label for="fullname" class="form-label">Full Name:</label>
+                    <input type="text" placeholder="Name" name="unname" id="unname" class="form-control" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Fullname is required</div>
+               </div>
+               <div class="my-3">
+                    <label for="text" class="form-label">User Name</label>
+                    <input type="text" placeholder="User Name" class="form-control" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Username is required</div>
+                </div>
+                <div class="my-3">
+                    <label for="email" class="form-label">Email id:</label>
+                    <input type="email" placeholder="email id" class="form-control" required>
+                    <div class="valid-feedback">Email id-Valid</div>
+                    <div class="invalid-feedback">Email id is required</div>
+                </div>
+                <div class="my-3">
+                    <label for="pwd" class="form-label">Possword</label>
+                    <input type="password" placeholder="Enter the possword" class="form-control" required>
+                    <div class="valid-feedback">Valid possword</div>
+                    <div class="invalid-feedback">possword id is required</div>
+                </div>
+                <div class="my-3">
+                    <label for="pwd" class="form-label">Conform Possword</label>
+                    <input type="password" placeholder="re-enter the possword" class="form-control" required>
+                    <div class="valid-feedback">Valid possword</div>
+                    <div class="invalid-feedback">possword id is required</div>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="I have read agree to the terms." required>
+                    <label class="form-label">I have read agree to the terms.</label>
+                    <div class="valid-feedback">Accepted</div>
+                    <div class="invalid-feedback">Accepted Terms is required</div>
+                </div>
+                <button type="button" class="btn btn-primary my-4">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
