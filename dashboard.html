@@ -31,17 +31,7 @@
             focusable[next].focus();
         });
     </script>
-    <script>
-        // Small helper to number programs dynamically if you change the list
-        document.addEventListener('DOMContentLoaded', () => {
-            const items = document.querySelectorAll('[data-program]');
-            items.forEach((el, i) => {
-                const num = i + 1;
-                const label = el.querySelector('.label');
-                if (label) label.textContent = `Program ${num}`;
-            });
-        });
-    </script>
+    <!-- Labels are set statically below from each program file for clarity -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -62,148 +52,148 @@
             <!-- Buttons: order matches current files listing -->
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="B12.html" target="_blank" rel="noopener">
-                    <div class="label">Program 1</div>
+                    <div class="label">Learn to create Websites (Intro)</div>
                     <div class="filename">B12.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="B14.html" target="_blank" rel="noopener">
-                    <div class="label">Program 2</div>
+                    <div class="label">Learn to create Websites (Bootstrap overview)</div>
                     <div class="filename">B14.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="B15.html" target="_blank" rel="noopener">
-                    <div class="label">Program 3</div>
+                    <div class="label">Navbar / Sections Demo</div>
                     <div class="filename">B15.html</div>
                 </a>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="Form-3.html" target="_blank" rel="noopener">
-                    <div class="label">Program 4</div>
+                    <div class="label">Sign Up / Login Form</div>
                     <div class="filename">Form-3.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="Template.html" target="_blank" rel="noopener">
-                    <div class="label">Program 5</div>
+                    <div class="label">FlexStart Landing Template</div>
                     <div class="filename">Template.html</div>
                 </a>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b1.html" target="_blank" rel="noopener">
-                    <div class="label">Program 6</div>
+                    <div class="label">Quick Short — Dashboard Tiles</div>
                     <div class="filename">b1.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b10.html" target="_blank" rel="noopener">
-                    <div class="label">Program 7</div>
+                    <div class="label">Tutorial Republic — Sections</div>
                     <div class="filename">b10.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b11.html" target="_blank" rel="noopener">
-                    <div class="label">Program 8</div>
+                    <div class="label">Navbar with Search</div>
                     <div class="filename">b11.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b13.html" target="_blank" rel="noopener">
-                    <div class="label">Program 9</div>
+                    <div class="label">Learn to create Websites (Info page)</div>
                     <div class="filename">b13.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b16.html" target="_blank" rel="noopener">
-                    <div class="label">Program 10</div>
+                    <div class="label">Navbar Examples — Movie/Song</div>
                     <div class="filename">b16.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b17.html" target="_blank" rel="noopener">
-                    <div class="label">Program 11</div>
+                    <div class="label">Navbar Variants</div>
                     <div class="filename">b17.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b18.html" target="_blank" rel="noopener">
-                    <div class="label">Program 12</div>
+                    <div class="label">Search Navbar / Avatar</div>
                     <div class="filename">b18.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b19.html" target="_blank" rel="noopener">
-                    <div class="label">Program 13</div>
+                    <div class="label">Startup Header / CTA</div>
                     <div class="filename">b19.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b2.html" target="_blank" rel="noopener">
-                    <div class="label">Program 14</div>
+                    <div class="label">Spacing Utilities Demo</div>
                     <div class="filename">b2.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b20.html" target="_blank" rel="noopener">
-                    <div class="label">Program 15</div>
+                    <div class="label">Startup Navbar / Actions</div>
                     <div class="filename">b20.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b3.html" target="_blank" rel="noopener">
-                    <div class="label">Program 16</div>
+                    <div class="label">Responsive Spacing Examples</div>
                     <div class="filename">b3.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b4.html" target="_blank" rel="noopener">
-                    <div class="label">Program 17</div>
+                    <div class="label">Two-column Layouts</div>
                     <div class="filename">b4.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b5.html" target="_blank" rel="noopener">
-                    <div class="label">Program 18</div>
+                    <div class="label">All Button Types & Spinners</div>
                     <div class="filename">b5.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b6.html" target="_blank" rel="noopener">
-                    <div class="label">Program 19</div>
+                    <div class="label">Circular Buttons Examples</div>
                     <div class="filename">b6.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b7.html" target="_blank" rel="noopener">
-                    <div class="label">Program 20</div>
+                    <div class="label">Material-style Navbars</div>
                     <div class="filename">b7.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b8.html" target="_blank" rel="noopener">
-                    <div class="label">Program 21</div>
+                    <div class="label">Profile Cards</div>
                     <div class="filename">b8.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="b9.html" target="_blank" rel="noopener">
-                    <div class="label">Program 22</div>
+                    <div class="label">Permits / Accounts UI</div>
                     <div class="filename">b9.html</div>
                 </a>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="form-2.html" target="_blank" rel="noopener">
-                    <div class="label">Program 23</div>
+                    <div class="label">Login / Registration Split Form</div>
                     <div class="filename">form-2.html</div>
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4" data-program>
                 <a class="btn btn-primary program-btn w-100" href="form1.html" target="_blank" rel="noopener">
-                    <div class="label">Program 24</div>
+                    <div class="label">Validated Registration Form</div>
                     <div class="filename">form1.html</div>
                 </a>
             </div>
