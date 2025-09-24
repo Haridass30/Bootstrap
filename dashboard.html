@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Programs Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        .program-btn { min-width: 220px; text-align: left; }
+        .filename { font-size: .8rem; color: #6c757d; }
+    </style>
+    <link rel="icon" href="data:,">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="color-scheme" content="light dark">
+    <script>
+        // Optional: keyboard navigation (arrow keys to move focus)
+        document.addEventListener('keydown', function(e) {
+            const keys = ['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'];
+            if (!keys.includes(e.key)) return;
+            const focusable = Array.from(document.querySelectorAll('.program-btn'));
+            const current = document.activeElement;
+            const idx = focusable.indexOf(current);
+            if (idx === -1) return;
+            e.preventDefault();
+            const cols = 3; // matches col-md-4 (12/4=3 per row)
+            let next = idx;
+            if (e.key === 'ArrowRight') next = Math.min(idx + 1, focusable.length - 1);
+            if (e.key === 'ArrowLeft') next = Math.max(idx - 1, 0);
+            if (e.key === 'ArrowDown') next = Math.min(idx + cols, focusable.length - 1);
+            if (e.key === 'ArrowUp') next = Math.max(idx - cols, 0);
+            focusable[next].focus();
+        });
+    </script>
+    <script>
+        // Small helper to number programs dynamically if you change the list
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('[data-program]');
+            items.forEach((el, i) => {
+                const num = i + 1;
+                const label = el.querySelector('.label');
+                if (label) label.textContent = `Program ${num}`;
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bootstrap Programs</a>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <div class="d-flex justify-content-between align-items-end mb-3">
+            <div>
+                <h1 class="h3 mb-1">Dashboard</h1>
+                <div class="text-secondary">Click a program to open it in a new tab</div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <!-- Buttons: order matches current files listing -->
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="B12.html" target="_blank" rel="noopener">
+                    <div class="label">Program 1</div>
+                    <div class="filename">B12.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="B14.html" target="_blank" rel="noopener">
+                    <div class="label">Program 2</div>
+                    <div class="filename">B14.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="B15.html" target="_blank" rel="noopener">
+                    <div class="label">Program 3</div>
+                    <div class="filename">B15.html</div>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="Form-3.html" target="_blank" rel="noopener">
+                    <div class="label">Program 4</div>
+                    <div class="filename">Form-3.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="Template.html" target="_blank" rel="noopener">
+                    <div class="label">Program 5</div>
+                    <div class="filename">Template.html</div>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b1.html" target="_blank" rel="noopener">
+                    <div class="label">Program 6</div>
+                    <div class="filename">b1.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b10.html" target="_blank" rel="noopener">
+                    <div class="label">Program 7</div>
+                    <div class="filename">b10.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b11.html" target="_blank" rel="noopener">
+                    <div class="label">Program 8</div>
+                    <div class="filename">b11.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b13.html" target="_blank" rel="noopener">
+                    <div class="label">Program 9</div>
+                    <div class="filename">b13.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b16.html" target="_blank" rel="noopener">
+                    <div class="label">Program 10</div>
+                    <div class="filename">b16.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b17.html" target="_blank" rel="noopener">
+                    <div class="label">Program 11</div>
+                    <div class="filename">b17.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b18.html" target="_blank" rel="noopener">
+                    <div class="label">Program 12</div>
+                    <div class="filename">b18.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b19.html" target="_blank" rel="noopener">
+                    <div class="label">Program 13</div>
+                    <div class="filename">b19.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b2.html" target="_blank" rel="noopener">
+                    <div class="label">Program 14</div>
+                    <div class="filename">b2.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b20.html" target="_blank" rel="noopener">
+                    <div class="label">Program 15</div>
+                    <div class="filename">b20.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b3.html" target="_blank" rel="noopener">
+                    <div class="label">Program 16</div>
+                    <div class="filename">b3.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b4.html" target="_blank" rel="noopener">
+                    <div class="label">Program 17</div>
+                    <div class="filename">b4.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b5.html" target="_blank" rel="noopener">
+                    <div class="label">Program 18</div>
+                    <div class="filename">b5.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b6.html" target="_blank" rel="noopener">
+                    <div class="label">Program 19</div>
+                    <div class="filename">b6.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b7.html" target="_blank" rel="noopener">
+                    <div class="label">Program 20</div>
+                    <div class="filename">b7.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b8.html" target="_blank" rel="noopener">
+                    <div class="label">Program 21</div>
+                    <div class="filename">b8.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="b9.html" target="_blank" rel="noopener">
+                    <div class="label">Program 22</div>
+                    <div class="filename">b9.html</div>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="form-2.html" target="_blank" rel="noopener">
+                    <div class="label">Program 23</div>
+                    <div class="filename">form-2.html</div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-program>
+                <a class="btn btn-primary program-btn w-100" href="form1.html" target="_blank" rel="noopener">
+                    <div class="label">Program 24</div>
+                    <div class="filename">form1.html</div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container py-4 text-secondary small">
+        <div>Generated dashboard linking to existing program files.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
